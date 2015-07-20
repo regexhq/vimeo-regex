@@ -1,0 +1,29 @@
+# Always-ignore dirs #
+# ####################
+_gh_pages
+node_modules
+bower_components
+components
+vendor
+build
+dest
+dist
+src
+lib-cov
+coverage
+nbproject
+cache
+temp
+tmp
+
+# Another files #
+# ###############
+Icon?
+.DS_Store*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+npm-debug.log
+.directory
+._*
+_test.js
