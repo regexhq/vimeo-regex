@@ -1,5 +1,5 @@
 # vimeo-regex [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Coveralls][coveralls-img]][coveralls-url] 
-> The correct Youtube video id regex. Regex done right!
+> The correct Vimeo video id regex.
 
 
 ## Install [![Nodei.co stats][npmjs-ico]][npmjs-url] 
@@ -11,11 +11,25 @@ $ npm test
 ```
 
 
-## Online
-
+## Play online
+ - https://regex101.com/r/uW5oK9/4
+ - http://regexr.com/3bdug
 
 ## Usage
-> For more use-cases see [tests](./test.js)
+> All use-cases are avaliable in [tests](./test.js)
+
+```
+var vimeoRegex = require('youtube-regex');
+
+// plain link
+vimeoRegex().test('https://vimeo.com/62092214');
+//=> true
+
+// groups link
+vimeoRegex().test('http://vimeo.com/groups/musicvideo/videos/126199390');
+//=> true
+```
+
 
 
 ## Thanks
