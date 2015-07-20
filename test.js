@@ -8,22 +8,96 @@ function test(str) {
 }
 
 var fixtures = {
-  invalid: [
-    'NoNoNo'
-  ],
-  shortlinks: [
-  ],
-  mixed: [
-  ],
-  attrlink: [
-  ]
+  plain: {
+    ok: [
+      'https://vimeo.com/62092214',
+      'http://vimeo.com/62092214',
+      'https://www.vimeo.com/62092214'
+    ],
+    not_ok: [
+      'NONONO',
+      'http://vimeo/62092214',
+      'http://vimeo.com/foo',
+    ]
+  },
+  channels: { 
+    ok: [
+      'https://vimeo.com/channels/documentaryfilm/128373915',
+      'http://vimeo.com/channels/documentaryfilm/128373915'
+    ],
+    not_ok: [
+      'https://vimeo.com/channels/foo-barr/documentaryfilm/128373915',
+    ]
+  },
+  groups: {
+    ok: [
+      'https://vimeo.com/groups/musicvideo/videos/126199390',
+      'http://vimeo.com/groups/musicvideo/videos/126199390'
+    ],
+    not_ok: [
+      'http://vimeo.com/groups/musicvideo/vid/126199390'
+    ]
+  },
+  attrlink: {
+    ok: [
+      'https://vimeo.com/62092214?query=foo'
+    ],
+    not_ok: [
+      'https://vimeo.com.omomom/62092214?query=foo'
+    ]
+  }
 };
 
-describe('vimeo-regex', function() {
-  describe('should match id from', function() {
-    it('shortlinks', function(done) {
-      fixtures.shortlinks.forEach(function each(link) {
-        assert.ok(test(link));
+
+describe('vimeo-regex ->', function() {
+  describe('should be ok with ->', function() {
+    it('plain url', function(done) {
+      fixtures.plain.ok.forEach(function (link) {
+        assert.ok(test(link), link);
+      });
+      done();
+    });
+    it('channels url', function(done) {
+      fixtures.channels.ok.forEach(function (link) {
+        assert.ok(test(link), link);
+      });
+      done();
+    });
+    it('groups url', function(done) {
+      fixtures.plain.ok.forEach(function (link) {
+        assert.ok(test(link), link);
+      });
+      done();
+    });
+    it('attribute url', function(done) {
+      fixtures.attrlink.ok.forEach(function (link) {
+        assert.ok(test(link), link);
+      });
+      done();
+    });
+  });
+  describe('should falied with ->', function() {
+    it('plain url', function(done) {
+      fixtures.plain.not_ok.forEach(function (link) {
+        assert.equal(test(link), false, link);
+      });
+      done();
+    });
+    it('channels url', function(done) {
+      fixtures.channels.not_ok.forEach(function (link) {
+        assert.equal(test(link), false, link);
+      });
+      done();
+    });
+    it('groups url', function(done) {
+      fixtures.plain.not_ok.forEach(function (link) {
+        assert.equal(test(link), false, link);
+      });
+      done();
+    });
+    it('attribute url', function(done) {
+      fixtures.attrlink.not_ok.forEach(function (link) {
+        assert.equal(test(link), false, link);
       });
       done();
     });
