@@ -38,7 +38,7 @@ var fixtures = {
       'http://vimeo.com/groups/musicvideo/vid/126199390'
     ]
   },
-  attrlink: {
+  attributes: {
     ok: [
       'https://vimeo.com/62092214?query=foo'
     ],
@@ -70,7 +70,7 @@ describe('vimeo-regex ->', function() {
       done();
     });
     it('attribute url', function(done) {
-      fixtures.attrlink.ok.forEach(function (link) {
+      fixtures.attributes.ok.forEach(function (link) {
         assert.ok(test(link), link);
       });
       done();
@@ -96,7 +96,7 @@ describe('vimeo-regex ->', function() {
       done();
     });
     it('attribute url', function(done) {
-      fixtures.attrlink.not_ok.forEach(function (link) {
+      fixtures.attributes.not_ok.forEach(function (link) {
         assert.equal(test(link), false, link);
       });
       done();
