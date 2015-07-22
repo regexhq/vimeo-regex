@@ -1,11 +1,9 @@
-# vimeo-regex [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Coveralls][coveralls-img]][coveralls-url] 
+# vimeo-regex [![Build Status](https://travis-ci.org/isRuslan/vimeo-regex.svg?branch=master)](https://travis-ci.org/isRuslan/vimeo-regex) [![Coverage Status](https://coveralls.io/repos/isRuslan/vimeo-regex/badge.svg?branch=master&service=github)](https://coveralls.io/github/isRuslan/vimeo-regex?branch=master)
 > The correct Vimeo video id regex.
 
+## Install 
 
-## Install [![Nodei.co stats][npmjs-ico]][npmjs-url] 
-> Install with [npm](https://npmjs.org)
-
-```
+```sh
 $ npm install vimeo-regex
 $ npm test
 ```
@@ -18,7 +16,7 @@ $ npm test
 ## Usage
 > All use-cases are avaliable in [tests](./test.js)
 
-```
+```js
 var vimeoRegex = require('youtube-regex');
 
 // plain link
