@@ -1,4 +1,4 @@
-# vimeo-regex [![Build Status](https://travis-ci.org/isRuslan/vimeo-regex.svg?branch=master)](https://travis-ci.org/isRuslan/vimeo-regex) [![Coverage Status](https://coveralls.io/repos/isRuslan/vimeo-regex/badge.svg?branch=master&service=github)](https://coveralls.io/github/isRuslan/vimeo-regex?branch=master)
+# vimeo-regex [![Build Status](https://travis-ci.org/isRuslan/vimeo-regex.svg?branch=master)](https://travis-ci.org/isRuslan/vimeo-regex)
 > The correct Vimeo video id regex.
 
 ## Install 
