@@ -12,8 +12,8 @@ $ npm test
 
 
 ## Play online
- - https://regex101.com/r/uW5oK9/4
- - http://regexr.com/3bdug
+ - https://regex101.com/r/uW5oK9/5
+ - http://regexr.com/3begm
 
 ## Usage
 > All use-cases are avaliable in [tests](./test.js)
