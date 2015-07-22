@@ -1,6 +1,8 @@
 # vimeo-regex [![Build Status](https://travis-ci.org/isRuslan/vimeo-regex.svg?branch=master)](https://travis-ci.org/isRuslan/vimeo-regex)
 > The correct Vimeo video id regex.
 
+[![NPM](https://nodei.co/npm/vimeo-regex.png?compact=true)](https://nodei.co/npm/vimeo-regex/)
+
 ## Install 
 
 ```sh
@@ -26,6 +28,10 @@ vimeoRegex().test('https://vimeo.com/62092214');
 // groups link
 vimeoRegex().test('http://vimeo.com/groups/musicvideo/videos/126199390');
 //=> true
+
+// get video ID
+vimeoRegex().exec('https://vimeo.com/62092214')[5];
+//=> 62092214
 ```
 
 
