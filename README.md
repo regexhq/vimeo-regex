@@ -17,7 +17,7 @@ $ npm test
 > All use-cases are avaliable in [tests](./test.js)
 
 ```js
-var vimeoRegex = require('youtube-regex');
+var vimeoRegex = require('vimeo-regex');
 
 // plain link
 vimeoRegex().test('https://vimeo.com/62092214');
