@@ -1,12 +1,12 @@
 {
   "name": "vimeo-regex",
   "description": "The correct vimeo video id regex",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
-    "test": "npm install && node_modules/.bin/mocha",
-    "test-cov": "npm install && node_modules/.bin/istanbul cover node_modules/.bin/_mocha",
-    "test-travis": "npm install && node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly",
-    "coveralls": "npm run test-travis && cat ./coverage/lcov.info | node_modules/.bin/coveralls"
+    "test": "npm install && mocha",
+    "test-cov": "npm install && istanbul cover _mocha",
+    "test-travis": "npm install && istanbul cover _mocha --report lcovonly",
+    "coveralls": "npm run test-travis && cat ./coverage/lcov.info | coveralls"
   },
   "author": {
     "name": "Ruslan Ismagilov",
