@@ -12,12 +12,16 @@ var fixtures = {
     ok: [
       'https://vimeo.com/62092214',
       'http://vimeo.com/62092214',
+      'vimeo.com/62092214',
+      'www.vimeo.com/62092214',
+      'vimeo.com/62092214',
       'https://www.vimeo.com/62092214'
     ],
     not_ok: [
       'NONONO',
       'http://vimeo/62092214',
       'http://vimeo.com/foo',
+      'http/vimeo.com/123'
     ]
   },
   channels: { 
