@@ -1,4 +1,4 @@
-# vimeo-regex [![Build Status](https://travis-ci.org/isRuslan/vimeo-regex.svg?branch=master)](https://travis-ci.org/isRuslan/vimeo-regex)
+# vimeo-regex [![Build Status](https://travis-ci.org/regexps/vimeo-regex.svg?branch=master)](https://travis-ci.org/regexps/vimeo-regex)
 > The correct Vimeo video id regex.
 
 [![NPM](https://nodei.co/npm/vimeo-regex.png?compact=true)](https://nodei.co/npm/vimeo-regex/)
