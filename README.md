@@ -30,7 +30,7 @@ vimeoRegex().test('http://vimeo.com/groups/musicvideo/videos/126199390');
 //=> true
 
 // get video ID
-vimeoRegex().exec('https://vimeo.com/62092214')[5];
+vimeoRegex().exec('https://vimeo.com/62092214')[4];
 //=> 62092214
 ```
 
